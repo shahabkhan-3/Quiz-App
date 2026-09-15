@@ -19,7 +19,15 @@ let questions = [{
     {
          Q: 'Who invented JavaScript?',
     options: ['Tim Berners-Lee','Brendan Eich', 'Haakon Wium Lie','elon musk'],
-    answer: 'Brendan Eich'
+    answer: 'Brendan Eich'},
+                 {
+        Q: 'In HTML, JavaScripts must be inserted inside which HTML tags?',
+    options: ['<script> and </script>','<javascript> and </javascript>', '<head></head>','<link >'],
+    answer: '<script> and </script>'},  
+                 {
+                     Q: 'What is the correct file extension for JavaScript files?',
+    options: ['.jvs','.jv', '.js','.javascript'],
+    answer: '.js'
 }]
 function showQ(){
 let currentQbox = questions[currentQ]
@@ -58,7 +66,7 @@ if(currentQ < questions.length){
    
 else{
     Q.innerText=''
-    score.innerText=` Your score is ${myScore} /3`
+    score.innerText=` Your score is ${myScore} /5`
     btns.forEach(btn => btn.style.display ='none')
     result.style.display ='block'
     playAgain.style.display = 'block'
